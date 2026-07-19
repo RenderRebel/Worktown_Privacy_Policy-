@@ -1,113 +1,270 @@
-# Privacy Policy for Worktown
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Worktown</title>
+<style>
+  :root {
+    --primary: #2563eb;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --bg: #f9fafb;
+    --card-bg: #ffffff;
+    --border: #e5e7eb;
+  }
 
-**Last Updated: July 19, 2026**
+  * {
+    box-sizing: border-box;
+  }
 
-Worktown ("we," "our," or "us") operates the Worktown mobile application (the "App"), a real-time hyperlocal job matching platform that connects local workers with nearby service providers. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
 
-By using Worktown, you agree to the collection and use of information in accordance with this policy.
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
 
----
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-## 1. Information We Collect
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+    color: var(--text);
+  }
 
-### 1.1 Information You Provide
-- **Account Information:** Name, email address, phone number, and password when you register.
-- **Profile Information:** Profile photo, skills, work experience, and mode preference (Worker or Provider).
-- **Job Information:** Job listings, applications, task descriptions, and pricing details you post or apply to.
-- **PIN Code / Location Data:** Your PIN code or area location, used to match you with nearby jobs or workers.
-- **Communications:** Messages, reviews, ratings, and any information you submit when contacting support.
+  header p.updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
 
-### 1.2 Information Collected Automatically
-- **Device Information:** Device model, operating system, unique device identifiers, and app version.
-- **Usage Data:** Pages viewed, features used, job status interactions, and time spent in the App.
-- **Location Data:** Approximate or precise location (if permission granted) to enable hyperlocal job matching.
-- **Push Notification Tokens:** Used to deliver real-time job status updates (e.g., Pending, Accepted, Arriving, In Progress, Done, Completed).
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
 
-### 1.3 Information from Third Parties
-- Data processed through **Cloud Firestore** and Firebase services (e.g., authentication, crash reporting, analytics, push notifications).
+  .intro {
+    margin-bottom: 24px;
+  }
 
----
+  section {
+    margin-bottom: 28px;
+  }
 
-## 2. How We Use Your Information
+  section:last-of-type {
+    margin-bottom: 0;
+  }
 
-We use the information we collect to:
-- Match Workers and Providers based on hyperlocal PIN code data.
-- Facilitate job postings, applications, and real-time job lifecycle tracking.
-- Send push notifications and status updates via Cloud Firestore.
-- Verify user identity and maintain account security.
-- Improve, personalize, and troubleshoot the App.
-- Respond to customer support requests.
-- Comply with legal obligations and enforce our Terms of Service.
+  h2 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
 
----
+  h3 {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
 
-## 3. How We Share Your Information
+  ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
 
-We do not sell your personal information. We may share information with:
-- **Other Users:** Basic profile and job-related details necessary to complete a job match (e.g., a Provider can see a Worker's profile when reviewing an applicant).
-- **Service Providers:** Third-party vendors that help us operate the App, including Google Firebase/Cloud Firestore for data storage and notifications.
-- **Legal Requirements:** When required by law, regulation, legal process, or governmental request.
-- **Business Transfers:** In connection with a merger, acquisition, or sale of assets.
+  li {
+    margin-bottom: 6px;
+  }
 
----
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
 
-## 4. Data Storage and Security
+  a:hover {
+    text-decoration: underline;
+  }
 
-Your information is stored securely using Cloud Firestore with industry-standard security measures, including encryption in transit. While we take reasonable steps to protect your data, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
+  .note {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: #7c2d12;
+    margin-top: 32px;
+  }
 
----
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
 
-## 5. Your Rights and Choices
+<div class="container">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last Updated: July 19, 2026</p>
+  </header>
 
-Depending on your location, you may have the right to:
-- Access, update, or delete your personal information.
-- Withdraw consent for location tracking or push notifications (via device settings).
-- Request a copy of your data.
-- Object to certain processing activities.
+  <div class="card">
+    <p class="intro">
+      Worktown ("we," "our," or "us") operates the Worktown mobile application (the "App"), a real-time hyperlocal
+      job matching platform that connects local workers with nearby service providers. This Privacy Policy explains
+      how we collect, use, disclose, and safeguard your information when you use our App.
+    </p>
+    <p class="intro">
+      By using Worktown, you agree to the collection and use of information in accordance with this policy.
+    </p>
 
-To exercise these rights, contact us at **[insert support email]**.
+    <section>
+      <h2>1. Information We Collect</h2>
 
----
+      <h3>1.1 Information You Provide</h3>
+      <ul>
+        <li><strong>Account Information:</strong> Name, email address, phone number, and password when you register.</li>
+        <li><strong>Profile Information:</strong> Profile photo, skills, work experience, and mode preference (Worker or Provider).</li>
+        <li><strong>Job Information:</strong> Job listings, applications, task descriptions, and pricing details you post or apply to.</li>
+        <li><strong>PIN Code / Location Data:</strong> Your PIN code or area location, used to match you with nearby jobs or workers.</li>
+        <li><strong>Communications:</strong> Messages, reviews, ratings, and any information you submit when contacting support.</li>
+      </ul>
 
-## 6. Location and PIN Code Data
+      <h3>1.2 Information Collected Automatically</h3>
+      <ul>
+        <li><strong>Device Information:</strong> Device model, operating system, unique device identifiers, and app version.</li>
+        <li><strong>Usage Data:</strong> Pages viewed, features used, job status interactions, and time spent in the App.</li>
+        <li><strong>Location Data:</strong> Approximate or precise location (if permission granted) to enable hyperlocal job matching.</li>
+        <li><strong>Push Notification Tokens:</strong> Used to deliver real-time job status updates (e.g., Pending, Accepted, Arriving, In Progress, Done, Completed).</li>
+      </ul>
 
-Worktown's core functionality relies on hyperlocal matching. We collect PIN code and/or location data to:
-- Show nearby job listings to Workers.
-- Show nearby applicant profiles to Providers.
+      <h3>1.3 Information from Third Parties</h3>
+      <ul>
+        <li>Data processed through <strong>Cloud Firestore</strong> and Firebase services (e.g., authentication, crash reporting, analytics, push notifications).</li>
+      </ul>
+    </section>
 
-You may disable location permissions in your device settings, but this may limit or disable core App features.
+    <section>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Match Workers and Providers based on hyperlocal PIN code data.</li>
+        <li>Facilitate job postings, applications, and real-time job lifecycle tracking.</li>
+        <li>Send push notifications and status updates via Cloud Firestore.</li>
+        <li>Verify user identity and maintain account security.</li>
+        <li>Improve, personalize, and troubleshoot the App.</li>
+        <li>Respond to customer support requests.</li>
+        <li>Comply with legal obligations and enforce our Terms of Service.</li>
+      </ul>
+    </section>
 
----
+    <section>
+      <h2>3. How We Share Your Information</h2>
+      <p>We do not sell your personal information. We may share information with:</p>
+      <ul>
+        <li><strong>Other Users:</strong> Basic profile and job-related details necessary to complete a job match (e.g., a Provider can see a Worker's profile when reviewing an applicant).</li>
+        <li><strong>Service Providers:</strong> Third-party vendors that help us operate the App, including Google Firebase/Cloud Firestore for data storage and notifications.</li>
+        <li><strong>Legal Requirements:</strong> When required by law, regulation, legal process, or governmental request.</li>
+        <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets.</li>
+      </ul>
+    </section>
 
-## 7. Children's Privacy
+    <section>
+      <h2>4. Data Storage and Security</h2>
+      <p>
+        Your information is stored securely using Cloud Firestore with industry-standard security measures,
+        including encryption in transit. While we take reasonable steps to protect your data, no method of
+        electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
+      </p>
+    </section>
 
-Worktown is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from minors. If we become aware that we have collected data from a minor, we will take steps to delete it.
+    <section>
+      <h2>5. Your Rights and Choices</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li>Access, update, or delete your personal information.</li>
+        <li>Withdraw consent for location tracking or push notifications (via device settings).</li>
+        <li>Request a copy of your data.</li>
+        <li>Object to certain processing activities.</li>
+      </ul>
+      <p>To exercise these rights, contact us at <a href="mailto:support@worktown.com">support@worktown.com</a>.</p>
+    </section>
 
----
+    <section>
+      <h2>6. Location and PIN Code Data</h2>
+      <p>Worktown's core functionality relies on hyperlocal matching. We collect PIN code and/or location data to:</p>
+      <ul>
+        <li>Show nearby job listings to Workers.</li>
+        <li>Show nearby applicant profiles to Providers.</li>
+      </ul>
+      <p>You may disable location permissions in your device settings, but this may limit or disable core App features.</p>
+    </section>
 
-## 8. Data Retention
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>
+        Worktown is not intended for use by individuals under the age of 18. We do not knowingly collect personal
+        information from minors. If we become aware that we have collected data from a minor, we will take steps
+        to delete it.
+      </p>
+    </section>
 
-We retain your information for as long as your account is active or as needed to provide services, comply with legal obligations, resolve disputes, and enforce agreements.
+    <section>
+      <h2>8. Data Retention</h2>
+      <p>
+        We retain your information for as long as your account is active or as needed to provide services,
+        comply with legal obligations, resolve disputes, and enforce agreements.
+      </p>
+    </section>
 
----
+    <section>
+      <h2>9. Third-Party Services</h2>
+      <p>
+        Worktown uses third-party services such as Google Firebase and Cloud Firestore, which have their own
+        privacy policies governing the use of your information. We encourage you to review their policies.
+      </p>
+    </section>
 
-## 9. Third-Party Services
+    <section>
+      <h2>10. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of significant changes by
+        posting the new policy on this page and updating the "Last Updated" date.
+      </p>
+    </section>
 
-Worktown uses third-party services such as Google Firebase and Cloud Firestore, which have their own privacy policies governing the use of your information. We encourage you to review their policies.
+    <section>
+      <h2>11. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+      <p>
+        Email: <a href="mailto:krahul97930@gmail.com">krahul97930@gmail.com</a><br>
+        App Name: Worktown
+      </p>
+    </section>
+  </div>
 
----
+  <footer>
+    &copy; 2026 Worktown. All rights reserved.
+  </footer>
+</div>
 
-## 10. Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page and updating the "Last Updated" date.
-
----
-
-## 11. Contact Us
-
-If you have questions or concerns about this Privacy Policy, please contact us at:
-
-**Email:** krahul97930@gmail.com
-**App Name:** Worktown
-
----
+</body>
+</html>
